@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.table_dark {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  width: 640px;
+  text-align: left;
+  border-collapse: collapse;
+  background: #252F48;
+  margin: 10px;
+}
+th:nth-child {
+  color: #EDB749;
+  border-bottom: 1px solid #37B5A5;
+  padding: 12px 17px;
+}
+td:nth-child {
+  color: #CAD4D6;
+  border-bottom: 1px solid #37B5A5;
+  border-right:1px solid #37B5A5;
+  padding: 7px 17px;
+}
+tr:last-child td:nth-child {
+  border-bottom: none;
+}
+td:last-child {
+  border-right: none;
+}
+tr:hover:nth-child td:nth-child {
+  text-decoration: underline;
+}

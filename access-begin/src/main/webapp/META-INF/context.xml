@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/access-begin">
+    <Resource
+        name="jdbc/InventDB" 
+ 		driverClassName="net.ucanaccess.jdbc.UcanaccessDriver" 
+        maxActive="4" 
+        maxIdle="2" 
+        maxWait="5000" 
+        username="admin" 
+        password="postman" 
+        type="javax.sql.DataSource" 
+        url="jdbc:ucanaccess://${catalina.base}/webapps/access-begin/base/Basa.mdb" 
+        />
+         
+</Context>

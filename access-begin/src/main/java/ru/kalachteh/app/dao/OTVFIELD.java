@@ -1,0 +1,15 @@
+package ru.kalachteh.app.dao;
+
+public enum OTVFIELD {
+	OTV_ID,
+	PERSONNEL_ID,
+	ATTERNEY,
+	SURNAME,
+	NAME,
+	PATRONYMIC,
+	PASSPORT_NUMBER,
+	PHON,
+	SIGN,
+	POST_NAME,
+	OTDEL_ID
+}

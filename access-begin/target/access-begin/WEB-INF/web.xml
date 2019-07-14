@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+   <welcome-file-list>
+    <welcome-file>MainServlet</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>MainServlet</servlet-name>
+<!--   	<display-name>MainServlet</display-name> -->
+<!--   	<description></description> -->
+  	<servlet-class>ru.kalachteh.app.control.web.MainServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WebControlMaterial</servlet-name>
+<!--   	<display-name>WebControlMaterial</display-name> -->
+<!--   	<description></description> -->
+  	<servlet-class>ru.kalachteh.app.control.web.WebControlMaterial</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>WebControlGruppa</display-name>
+  	<servlet-name>WebControlGruppa</servlet-name>
+  	<servlet-class>ru.kalachteh.app.control.web.WebControlGruppa</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>WebControlOtv</display-name>
+  	<servlet-name>WebControlOtv</servlet-name>
+  	<servlet-class>ru.kalachteh.app.control.web.WebControlOtv</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>WebControlOtdel</display-name>
+  	<servlet-name>WebControlOtdel</servlet-name>
+  	<servlet-class>ru.kalachteh.app.control.web.WebControlOtdel</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>WebControlImport</display-name>
+  	<servlet-name>WebControlImport</servlet-name>
+  	<servlet-class>ru.kalachteh.app.control.web.WebControlImport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MainServlet</servlet-name>
+  	<url-pattern>/MainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WebControlMaterial</servlet-name>
+  	<url-pattern>/WebControlMaterial</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WebControlGruppa</servlet-name>
+  	<url-pattern>/WebControlGruppa</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WebControlOtv</servlet-name>
+  	<url-pattern>/WebControlOtv</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WebControlOtdel</servlet-name>
+  	<url-pattern>/WebControlOtdel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WebControlImport</servlet-name>
+  	<url-pattern>/WebControlImport</url-pattern>
+  </servlet-mapping>
+  <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/InventDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+</web-app>
